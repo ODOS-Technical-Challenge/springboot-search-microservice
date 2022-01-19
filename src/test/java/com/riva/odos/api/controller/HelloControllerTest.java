@@ -15,7 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-@SpringBootTest(classes=HelloController.class)
+@SpringBootTest(classes=SearchController.class)
 @AutoConfigureMockMvc
 public class HelloControllerTest {
 
@@ -23,7 +23,7 @@ public class HelloControllerTest {
     private MockMvc mockMvc;
 
     @InjectMocks
-    private HelloController controller;
+    private SearchController controller;
 
     @Test
     public void contextLoads() throws Exception {
