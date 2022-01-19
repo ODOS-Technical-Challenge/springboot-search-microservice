@@ -17,7 +17,7 @@ public class SearchController {
 	@Autowired
 	UserService userService;
 	
-    @RequestMapping(value="search/", method=RequestMethod.GET)
+    @RequestMapping(value="/search", method=RequestMethod.GET)
     public UserInfoDto search(@RequestParam(value="searchValue") String searchValue) {
         return userService.getUser();
     }
